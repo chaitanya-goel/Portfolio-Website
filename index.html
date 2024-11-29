@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/74825a2bed.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/chai.jpeg" alt="">
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h4>I Am <span>Chaitanya</span>
+                    <br>
+                    From India.
+
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/WhatsApp Image 2024-11-23 at 18.26.59.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Chaitanya Goel. I recently completed my Bachelor of Computer Applications (BCA) from
+                        Punjabi University, Patiala. During my studies, I developed a strong interest in front-end
+                        development and have since gained valuable knowledge and skills in this field. I’m passionate
+                        about creating visually appealing and user-friendly websites, and I’m continuously learning and
+                        improving my skills to stay up-to-date with the latest trends and technologies in front-end
+                        development.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li> <span> Front End Developer</span></li>
+                            Focusing On User Interface Design,
+                            Responsiveness, and Interactivity
+                            Using HTML, CSS, and JavaScript.
+                            <br>
+                            <br>
+                            <li> <span> Web Development</span></li>
+                            Creating and Maintaining Websites,
+                            Including Designing the User Interface,
+                            Building Functionality, and Ensuring the Site Runs Smoothly.
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Weather App</span></li>
+                            A Weather app built with HTML, CSS, JavaScript, and React displays
+                            real-time weather data, providing a dynamic, user-friendly
+                            interface that updates based on location.
+                            <br>
+                            <br>
+                            <li> <span>Tic Tac Toe Game</span></li>
+                            A Tic Tac Toe game built with HTML, CSS, JavaScript, and React allows two
+                            players to take turns marking spaces on a grid, with real-time updates and win detection.
+                            <br>
+                            <br>
+                            <li><span>E-Commerce Website</span></li>
+                            An E-Commerce website built with HTML, CSS, JavaScript, and React offers a dynamic shopping
+                            experience,
+                            allowing users to browse products,
+                            add items to a cart, and make purchases, with real-time updates and responsive design.
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li> <span>Higher Secondary Examination(2021)</span></li>
+                            The Higher Secondary Examination (2021) is
+                             a key assessment for 12th-grade students,
+                             determining their eligibility for higher education.
+                            <br>
+                            <br>
+                            <li> <span>Bachelor of  Computer Application(2021-2024)</span></li>
+                            The Bachelor of Computer Applications (BCA) program (2021-2024)
+                             completed at Punjabi University,
+                             Patiala, provided a strong foundation in computer science, 
+                             programming, and software development.
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I provide web design services, creating visually appealing and user-friendly
+                         websites tailored to meet your needs.</p>
+                    
+                          <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-codepen"></i>
+                    <h2>Full Stack Web </h2>
+                    <p>I provide full-stack web design services, offering both
+                         front-end and back-end development to create complete, 
+                        functional, and visually appealing websites.</p>
+                
+                          <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>I provide app design services, creating intuitive and visually engaging mobile
+                         applications for a seamless user experience.</p>
+                 
+                          <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+
+                <div class="work">
+                   <img src="./images/work-1.png" alt="">
+                   <div class="layer">
+                    <h3>To-Do-List App</h3>
+                    <p>A To-Do List app built with React that allows users to create,
+                         edit, and delete tasks, set priorities, and mark tasks as completed. 
+                        It features a clean, interactive interface for efficient task
+                         management and organization.</p>
+                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                   </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3> Multipage Website </h3>
+                        <p>A multi-page website built with HTML, CSS, and Bootstrap, featuring responsive
+                             design and a user-friendly interface.
+                             It includes several pages for smooth navigation and optimal
+                              viewing across different devices.</p>
+                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                       </div>
+                 </div>
+
+                 <div class="work">
+                    <img src="./images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>An E-Commerce website built with React, offering a seamless shopping experience with features
+                             like product browsing, cart management, and secure checkout.
+                             It includes dynamic product listings and responsive design for optimal user interaction.</p>
+                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                       </div>
+                 </div>
+
+            </div>
+        </div>
+
+        <a href="#" class="btn">See More</a>
+
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>chaitanyagoel242@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>62804-79698</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/?_rdr"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                    </div>
+
+                    <a class="btn btn2"  href="./images/Chaitanya Goel CV.pdf" download>Download CV </a>
+
+                </div>
+                <div class="contact-right">
+                 <form name="submit-to-google-sheet">
+                   <input type="text" name="Name" placeholder="Your Name" required> 
+                   <input type="email" name="Email" placeholder="Your Email" required> 
+                 <textarea name="Messege" rows="6" placeholder="Your Message"></textarea>
+                   <button class="btn btn2" type="submit">
+                    Submit
+                   </button>
+                 </form>
+                  <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © Chaitanya. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials </p>
+
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabbanner){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabbanner).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0px";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px"; 
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyvDwS9SjaGT8KXlPFfT8zcauh9vZggJrzDHHKsaO78r9gSGnEuAojnXYTo3aPCerR7/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
